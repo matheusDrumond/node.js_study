@@ -1,65 +1,54 @@
 # Node.js
 
-This repository is going to contain the files I generate during my Node.js studies. As I study I'm updating the repository with the new information and the code.
-The name of the files with the code will contain the number of the sections it is related.
+This repository contains the files generated during my Node.js studies. I update this repository as I study, adding new information and code.
+
+The filenames for the code will indicate the section number they correspond to.
 
 ## 1 - Introduction
 
-In this section, we are going to understand the basic concepts about Node.js and how it works, getting a solid base to keep going with it.
+In this section, we will cover the basic concepts of Node.js and its functionality, establishing a solid foundation for further exploration.
 
-### 1.1 => Execution:
+### 1.1 - Execution:
 
-Node.js apps can be executed through the docs or by terminal. To execute them by terminal we have to type 'node [file_name]', probably this option will be useful for debbuging and testing.
+Node.js applications can be executed through the documentation or via the terminal. To execute them via the terminal, use `node [file_name]`. This option is particularly useful for debugging and testing purposes.
 
 ### 1.2 - First code:
 
-Now we are going to understand how to create the first file (in this moment, the first program will be written with only one file.)
+Here, we will learn how to create our initial file (at this stage, our first program will consist of just one file).
 
-<ul>
-    <li>The extension will be .js;</li>
-    <li>We are going to execute it using 'node [file_name]';</li>
-    <li>This code is going to be interpreted and the program is going to be executed.</li>
-</ul>
+- The file extension will be `.js`.
+- We will execute it using `node [file_name]`.
+- This code will be interpreted and executed as a program.
 
-### 1.3 - Importing module:
+### 1.3 - Importing modules:
 
-Inside Node aplications it is very commom to use modules to do some basic stuff. To start and understand it, we are going to use a module called File System, from Node. This module is used to work with files and folders and it's called a 'core module', what means that it is provided by Node itself, not being necessary to install it from other sources. At last, to import this modulo we are going to use the 'require' method, although theres is also the 'import' method.
+In Node applications, it is common to use modules for various tasks. To begin understanding this concept, we will utilize a core module called File System provided by Node. Core modules like this one are built into Node itself, eliminating the need for external installation. To import this module, we will use the `require` method, although there is also an `import` method available.
 
 ## 2 - The basics
 
-In this section, we are going to understand some basic concepts about Node. Beyond that, we will see some functions and prompts that will be used very frequently and some very common modules.
+In this section, we will delve into fundamental Node.js concepts, commonly used functions, prompts, and essential modules.
 
-### 2.1 - The modules
+### 2.1 - Modules
 
-The modules are ready parts of code that you can import to use. Normally, they execute very frequent activities, so it's better to import them than rewrite that part of code in every project you work on. To get it more organized, they are separate in three possible categories:
+Modules are reusable blocks of code that can be imported and utilized in your applications. They are categorized into three types:
 
-<ul>
-    <li>Core modules: Modules provided by Node itself, you don't need to install it from other sources.</li>
-    <li>Local modules: Modules developed by you, they are going to be reused and imported in your code to avoid repetition or to make it more organised.</li>
-    <li>Third-party modules: These modules are going to be installed using the Node Package Manager (npm) and they are developed by other people.</li>
-</ul>
+- **Core modules:** Provided by Node itself, requiring no external installation.
+- **Local modules:** Developed by you to be reused across different projects, enhancing code organization and reducing redundancy.
+- **Third-party modules:** Developed by others and available via Node Package Manager (npm).
 
 ### 2.2 - Export and Import
 
-To use a module it is necessary to import it, and when it comes to local modules we are going to export them too.
-There are some ways to export a file:
+To use a module, it must be imported, and in the case of local modules, it also needs to be exported. There are several ways to export a file:
 
-<ul>
-    <li>
-        module.exports: it generates an object where its properties are the exported modules. Although it is an old way to export it and can make the code a little bit confusing, it is still the most common way to deal with the local modules import and export.
-    </li>
-    <li>
-        mjs extension: it is a very new option, provided by the ES6 version, mot much used in the professional life, but is useful to understand it.
-    </li>
-</ul>
+- `module.exports`: Generates an object whose properties are the exported modules. Despite being older, this remains the most common approach for managing local module imports and exports.
+- `.mjs` extension: Introduced in ES6, this is a newer option, less commonly used in professional environments but valuable for understanding modern JavaScript modules.
 
 ### 2.3 - Core Modules
 
-Now that we already know how to create our own modules, let's see how to use the modules that we can access having Node.
-Those modules are ready to be used and they are useful to solve frequent problems, such as managing folders and files. To use them it is only necessary to import them in your code.
+Now that we understand how to create our own modules, let's explore using the modules provided by Node. These modules are ready to use and are valuable for addressing common tasks such as file and folder management.
 
 ### 2.4 - Command Line Arguments
 
-It is possible to pass arguments to Node through command lines, it means that you can give Node information this way. In the folder '2.4_cmd-line-arguments' will be a detailed explanation on how to use it and access it.
+Node.js allows passing arguments via the command line, enabling interaction with Node through input data. For detailed information on usage and access, refer to the '2.4_cmd-line-arguments' folder.
 
-The command line arguments are very useful in the routine of a Node developer due to the fact that this tool allows you to create very powerful scripts capable of doing many different things.
+Command line arguments are indispensable in a Node developer's toolkit, empowering the creation of powerful scripts capable of diverse functionalities.
