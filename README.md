@@ -4,6 +4,8 @@ This repository contains the files generated during my Node.js studies. I update
 
 The filenames for the code will indicate the section number they correspond to.
 
+[This study path is based in Matheus Battisti Node.js course]
+
 ## 1 - Introduction
 
 In this section, we will cover the basic concepts of Node.js and its functionality, establishing a solid foundation for further exploration.
@@ -52,3 +54,21 @@ Now that we understand how to create our own modules, let's explore using the mo
 Node.js allows passing arguments via the command line, enabling interaction with Node through input data. For detailed information on usage and access, refer to the '2.4_cmd-line-arguments' folder.
 
 Command line arguments are indispensable in a Node developer's toolkit, empowering the creation of powerful scripts capable of diverse functionalities.
+
+### 2.5 - Third-Party Modules
+
+Before diving into this section, it's important to understand Node Package Manager (npm). npm comes bundled with Node.js, and you can verify its installation by typing `npm --version` in your terminal. This tool is crucial for installing, managing, and removing modules, among other functionalities. Throughout this section, npm will serve as the gateway to incorporating third-party modules into our projects.
+
+#### -> Understanding Third-Party Modules
+
+Apart from the modules provided by Node.js and those you develop yourself, there's another category to consider: third-party modules. These are created by other developers and are available for anyone to use in their projects.
+
+#### -> How to Use Third-Party Modules
+
+1. **Initialization:** Begin by initializing your project using `npm init`. This command sets up your project environment and generates a `package.json` file. This file contains project metadata, including dependencies (i.e., modules used in your project), scripts that can be executed via command line, and a project description.
+
+2. **Installation:** To utilize a specific package, use npm to install it. The command format is `npm install <packageName>`. This action downloads and installs the package into the `node_modules` folder of your project.
+
+3. **Usage:** Once installed, you can import the module into your project files using `require('moduleName')`. For example, `const moduleName = require('moduleName')` allows you to use functionalities provided by the third-party module within your code.
+
+By following these steps, you can seamlessly integrate third-party modules into your Node.js projects, leveraging the extensive ecosystem of community-developed packages available through npm.
