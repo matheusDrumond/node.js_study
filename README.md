@@ -18,9 +18,9 @@ Node.js applications can be executed through the documentation or via the termin
 
 Here, we will learn how to create our initial file (at this stage, our first program will consist of just one file).
 
-- The file extension will be `.js`.
-- We will execute it using `node [file_name]`.
-- This code will be interpreted and executed as a program.
+-   The file extension will be `.js`.
+-   We will execute it using `node [file_name]`.
+-   This code will be interpreted and executed as a program.
 
 ### 1.3 - Importing modules:
 
@@ -34,16 +34,16 @@ In this section, we will delve into fundamental Node.js concepts, commonly used 
 
 Modules are reusable blocks of code that can be imported and utilized in your applications. They are categorized into three types:
 
-- **Core modules:** Provided by Node itself, requiring no external installation.
-- **Local modules:** Developed by you to be reused across different projects, enhancing code organization and reducing redundancy.
-- **Third-party modules:** Developed by others and available via Node Package Manager (npm).
+-   **Core modules:** Provided by Node itself, requiring no external installation.
+-   **Local modules:** Developed by you to be reused across different projects, enhancing code organization and reducing redundancy.
+-   **Third-party modules:** Developed by others and available via Node Package Manager (npm).
 
 ### 2.2 - Export and Import
 
 To use a module, it must be imported, and in the case of local modules, it also needs to be exported. There are several ways to export a file:
 
-- `module.exports`: Generates an object whose properties are the exported modules. Despite being older, this remains the most common approach for managing local module imports and exports.
-- `.mjs` extension: Introduced in ES6, this is a newer option, less commonly used in professional environments but valuable for understanding modern JavaScript modules.
+-   `module.exports`: Generates an object whose properties are the exported modules. Despite being older, this remains the most common approach for managing local module imports and exports.
+-   `.mjs` extension: Introduced in ES6, this is a newer option, less commonly used in professional environments but valuable for understanding modern JavaScript modules.
 
 ### 2.3 - Core Modules
 
@@ -72,3 +72,15 @@ Apart from the modules provided by Node.js and those you develop yourself, there
 3. **Usage:** Once installed, you can import the module into your project files using `require('moduleName')`. For example, `const moduleName = require('moduleName')` allows you to use functionalities provided by the third-party module within your code.
 
 By following these steps, you can seamlessly integrate third-party modules into your Node.js projects, leveraging the extensive ecosystem of community-developed packages available through npm.
+
+### 2.6 - Improving Console Usage
+
+To make it easier to use and view data in the console, there's a module named 'Chalk' that make the content more visible usinmg colors to make the feedbacksa different. First of all, we have to install it via npm, just like this: `npm install chalk`. As you can see in the '2.6_chalk' file, it is useful to manage how the different responses can be printed in console.
+
+In the `index.js` file we can see how to use chalk to get different visual aspects depending on the response we want to print. Which can be useful to handle distinct types of behaviors in our programs.
+
+### 2.7 - Dealing with inputs
+
+It is possible to handle arguments when they are typed when the program is being executed, but it is also possible to get new inputs from the user after the program is executed.
+
+To do it, we will use the `readline` core module which allow us to handle inputs and then manipulate them the way we prefer to do it.
